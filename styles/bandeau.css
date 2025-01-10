@@ -1,0 +1,186 @@
+.bandeau {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFD700; /* Jaune doré */
+    padding: 15px 30px;
+    border-bottom: 5px solid #FFA500;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Style du bandeau lorsqu'il est "sticky" */
+.bandeau-fusion {
+    background-color: #FFC107; /* Jaune plus foncé pour le bandeau fixé */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Ombre plus prononcée */
+}
+
+/* Liens dans le bandeau */
+.bandeau a {
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.bandeau a:hover {
+    color: #1abc9c;
+    transform: translateY(-3px);
+}
+
+#logout-form{
+    background-color: #FFD700;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+}
+
+.logout-button {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+    padding: 0;
+}
+
+.logout-button:hover {
+    background-color: #FFD700;
+    color: #FFA500;
+    transform: translateY(-3px);
+}
+
+.logout-button .soleil-icon {
+    width: 35px;
+    margin-right: 5px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
+.logout-button:hover .soleil-icon {
+    transform: rotate(70deg);
+    filter: brightness(1.2);
+}
+
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.soleil-logo {
+    width: 65px;
+    margin-right: 15px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    box-shadow: none;
+    border: none;
+}
+
+.soleil-logo:hover {
+    transform: rotate(50deg);
+    filter: brightness(1.2); /* Légère brillance au survol */
+
+}
+
+/* Titre fixe du bandeau (garde Tongs Shop) */
+.titre {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    color: #333;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+/* Conteneur pour le titre du h1 ajouté dynamiquement */
+.page-title-container {
+    display: flex;
+    justify-content: center; /* Centre le titre horizontalement */
+    flex-grow: 1; /* Prend toute la largeur restante */
+    text-align: center;
+    position: absolute;
+    left: 50%; /* Positionne le conteneur au milieu */
+    transform: translateX(-50%); /* Recentre en utilisant une translation */
+}
+
+
+.page-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+/* Afficher le titre du h1 dans le bandeau lorsqu'il devient sticky */
+.bandeau-fusion .page-title {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Options utilisateur (Déconnexion, Panier) */
+.user-options {
+    display: flex;
+    align-items: center;
+}
+
+.user-options a {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    font-weight: 600;
+}
+
+.user-options a:hover {
+    color: #FFA500;
+    transform: translateY(-3px); /* Légère montée au survol */
+    text-decoration: none;
+}
+
+/* Icône à côté des liens (panier, déconnexion) */
+.soleil-icon {
+    width: 35px;
+    margin-right: 5px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    background: none; /* Supprime tout fond appliqué par CSS */
+    border: none; /* Supprime toute bordure éventuelle */
+    box-shadow: none;
+}
+
+.user-options a:hover .soleil-icon {
+    transform: rotate(70deg); /* Rotation au survol */
+    filter: brightness(1.2); /* Légère brillance */
+}
+
+/* Effet sur le H1 lorsque le bandeau est fusionné */
+.h1-fusion {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+

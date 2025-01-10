@@ -1,0 +1,146 @@
+/* Global styles */
+body {
+    background-color: #f0f2f5;
+    background-image: url('../images/soleil.png'); /* Image du soleil */
+    background-repeat: repeat;
+    background-size: 60px 60px; /* Taille des petits soleils */
+    font-family: 'Poppins', sans-serif;
+    color: #2c3e50;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container for the contact section */
+.contact-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1.5s ease-in-out;
+
+}h1 {
+     font-size: 36px;
+     color: #e74c3c;
+     margin-bottom: 20px;
+     text-transform: uppercase;
+     text-align: center;
+     letter-spacing: 2px;
+     position: relative;
+ }
+
+
+/* Image container with a round photo and shadow */
+.image-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.image-container img {
+    border-radius: 50%;
+    border: 5px solid #e74c3c;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    position: relative;
+}
+
+.image-container img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Section header */
+h2 {
+    font-size: 28px;
+    color: #3498db;
+    margin-bottom: 15px;
+    text-align: left;
+    border-bottom: 3px solid #ffff00;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #34495e;
+    text-align: justify;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: left;
+}
+
+ul li {
+    font-size: 18px;
+    color: #34495e;
+    margin: 15px 0;
+    position: relative;
+    padding-left: 30px;
+}
+
+ul li::before {
+    content: "★";
+    position: absolute;
+    left: 0;
+    color: #e74c3c;
+    font-size: 20px;
+}
+
+/* Contact info styles */
+.contact-info {
+    margin-top: 40px;
+    padding: 25px;
+    background-color: #e79d3c;
+    color: #ffffff;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.contact-info a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #ffdd57;
+}
+
+/* Back link styles */
+.back-link {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 25px;
+    background-color: #3498db;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-align: center;
+}
+
+.back-link:hover {
+    background-color: #2980b9;
+    transform: translateY(-5px);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

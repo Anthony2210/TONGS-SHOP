@@ -1,0 +1,351 @@
+/* Style général du conteneur du panier */
+.panier-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    width: 100%;
+}
+
+/* Style pour chaque article dans le panier */
+.panier-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    max-width: 1200px;
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: relative; /* Pour placer l'icône de soleil */
+    transition: all 0.3s ease;
+}
+
+.panier-item:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    background-color: #fffbe6; /* Couleur légèrement dorée */
+}
+
+/* Ajout de l'icône de soleil */
+.panier-item .soleil-icon {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 50px;
+    filter: brightness(1.1);
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.panier-item:hover .soleil-icon {
+    transform: rotate(15deg);
+    filter: brightness(1.4);
+}
+
+/* Classe spéciale pour le formulaire de quantité */
+.form-quantite-speciale {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100px;
+    margin-right: 20px;
+    background-color: transparent !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+/* Champ de saisie pour la quantité */
+input.quantite-field {
+    width: 60px;
+    text-align: center;
+    padding: 6px;
+    margin: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+/* Style pour l'image du produit */
+.panier-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+}
+
+.panier-image img {
+    width: 90px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Détails de l'article */
+.panier-details {
+    flex: 2;
+    margin-left: 20px;
+}
+
+.panier-details h3 {
+    margin-bottom: 8px;
+    font-size: 20px;
+    color: darkslateblue;
+}
+
+.panier-details h3 a {
+    color: darkslateblue;
+    text-decoration: none;
+}
+
+/* Quantité et actions */
+.panier-quantite-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    max-width: 250px;
+}
+
+.panier-total-article {
+    font-size: 18px;
+    color: darkslateblue;
+    text-align: right;
+}
+
+/* Total de la commande */
+.panier-total {
+    margin-top: 20px;
+    font-size: 20px;
+    color: darkslateblue;
+    text-align: center;
+}
+
+.panier-retour {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.panier-retour a {
+    background-color: darkslateblue;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.panier-retour a:hover {
+    background-color: darkslateblue;
+    color: white;
+}
+
+/* Titre principal du panier */
+.panier-title {
+    text-align: center;
+    font-size: 26px;
+    margin: 20px;
+    color: white;
+}
+
+/* Style pour le texte du panier vide */
+.panier-vide {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 100px auto;
+}
+
+.panier-vide h2 {
+    font-size: 28px;
+    color: darkslateblue;
+    margin-bottom: 20px;
+}
+
+.panier-vide p {
+    font-size: 18px;
+    color: #7f8c8d;
+    margin-bottom: 30px;
+}
+
+.btn-commencer {
+    display: inline-block;
+    background-color: darkslateblue;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-commencer:hover {
+    background-color: darkslateblue;
+    color: white;
+    text-decoration: underline;
+}
+/* Conteneur principal de la commande */
+.commande-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    width: 100%;
+}
+
+/* Style pour chaque article dans la commande */
+.commande-item {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    max-width: 800px;
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.commande-item:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    background-color: #fffbe6;
+}
+
+/* Image de l'article */
+.commande-image {
+    width: 120px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+
+/* Détails de l'article */
+.commande-details {
+    flex: 1;
+}
+
+.commande-details h3 {
+    font-size: 20px;
+    color: darkslateblue;
+    margin-bottom: 10px;
+}
+
+.commande-details p {
+    font-size: 16px;
+    color: black;
+    margin-bottom: 5px;
+}
+
+/* Montant total */
+.commande-total {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.commande-total h2 {
+    font-size: 24px;
+    color: darkslateblue;
+}
+
+/* Adresse de livraison */
+.commande-adresse {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.commande-adresse h3 {
+    font-size: 22px;
+    color: darkslateblue;
+    margin-bottom: 10px;
+}
+
+.commande-adresse p {
+    font-size: 18px;
+    color: black;
+}
+/* Boutons d'action */
+.commande-actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.btn-valider-commande,
+.btn-modifier-panier {
+    background-color: darkslateblue;
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-valider-commande:hover,
+.btn-modifier-panier:hover {
+    background-color: #FFA500;
+    transform: translateY(-3px);
+}
+
+/* Si vous utilisez un bouton dans un formulaire */
+button.btn-valider-commande {
+    border: none;
+    cursor: pointer;
+}
+
+/* Style pour le bouton de retour */
+.btn-retour{
+    display: inline-block;
+    margin: 30px auto;
+    padding: 12px 25px;
+    background-color: darkslateblue;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-retour:hover {
+    background-color: #FFA500;
+}
+
+/* Styles pour le panier vide */
+.panier-vide {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 100px auto;
+}
+
+.panier-vide h2 {
+    font-size: 28px;
+    color: darkslateblue;
+    margin-bottom: 20px;
+}
+
+.panier-vide p {
+    font-size: 18px;
+    color: #7f8c8d;
+    margin-bottom: 30px;
+}
+
+.btn-valider-commande i,
+.btn-modifier-panier i {
+    margin-right: 8px;
+    font-size: 1em;
+    vertical-align: middle;
+}

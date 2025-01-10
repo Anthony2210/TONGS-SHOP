@@ -1,0 +1,138 @@
+/* Styles généraux du pied de page */
+.footer {
+    background-color: #1a1439;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 50px;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    border-top: 5px solid #2980b9;
+    width: 100%;
+    position: relative;
+    padding-top: 40px;
+    overflow: hidden; /* Pour les éléments positionnés en dehors du conteneur */
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-top {
+    position: relative;
+}
+
+.soleil-icon-footer {
+    position: absolute;
+    width: 60px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.soleil-left-bottom-footer {
+    bottom: -20px;
+    left: -30px;
+}
+
+.soleil-right-bottom-footer {
+    bottom: -20px;
+    right: -30px;
+}
+
+.footer:hover .soleil-icon-footer {
+    transform: rotate(15deg);
+    filter: brightness(1.4);
+}
+
+/* Description du site */
+.description {
+    font-size: 18px;
+    color: #ecf0f1;
+    max-width: 800px;
+    line-height: 1.6;
+    margin: auto;
+    text-align: center;
+}
+
+/* Liens du footer */
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-links h2 {
+    font-size: 22px;
+    color: #f1c40f;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.links-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.links-section ul li {
+    margin-bottom: 10px;
+}
+
+.links-section ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.links-section ul li a:hover {
+    color: #f1c40f;
+}
+
+/* Bouton Contact */
+.sun-button {
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    background-image: url('../images/soleil.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+    margin: auto;
+}
+
+.sun-button:hover {
+    transform: rotate(360deg);
+}
+
+.sun-button:active {
+    transform: scale(0.9);
+}
+
+.sun-button .button-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+}
+
+/* Partie basse du footer */
+.footer-bottom {
+    margin-top: 10px;
+    padding-top: 20px;
+    border-top: 1px solid #7f8c8d;
+}
+
+.footer-bottom p {
+    color: #bdc3c7;
+    font-size: 16px;
+    margin-top: 1px;
+}
+
