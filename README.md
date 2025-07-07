@@ -2,7 +2,7 @@
 
 #### Lien de la vidéo d'évaluation du site : https://www.youtube.com/watch?v=0lzIRy3aN6w&t=2s
 
-### A montrer :
+#### Étapes de la démonstration :
 
 - Navigation libre sur les différentes pages web de vos articles.
 
